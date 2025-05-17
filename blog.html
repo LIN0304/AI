@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog posts covering web development and design topics.">
+    <title>Blog - My Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Blog</h1>
+        <p>Select a tag to filter posts:</p>
+        <div>
+            <button onclick="filterPosts('web')">Web</button>
+            <button onclick="filterPosts('design')">Design</button>
+            <button onclick="filterPosts('seo')">SEO</button>
+            <button onclick="filterPosts('')">Show All</button>
+        </div>
+
+        <section class="posts">
+            <article class="post" data-tags="web">
+                <h2><a href="posts/post1.html">Getting Started with Web Development</a></h2>
+                <p class="tags">Tags: web</p>
+            </article>
+            <article class="post" data-tags="design">
+                <h2><a href="posts/post2.html">Design Tips for Beginners</a></h2>
+                <p class="tags">Tags: design</p>
+            </article>
+            <article class="post" data-tags="seo">
+                <h2><a href="posts/post3.html">Understanding SEO Fundamentals</a></h2>
+                <p class="tags">Tags: seo</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Blog</p>
+    </footer>
+</body>
+</html>
